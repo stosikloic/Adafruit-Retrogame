@@ -1,4 +1,4 @@
-# Sample configuration file for retrogame.
+# Sample configuration file for retrogame.custom
 # Really minimal syntax, typically two elements per line w/space delimiter:
 # 1) a key name (from keyTable.h; shortened from /usr/include/linux/input.h).
 # 2) a GPIO pin number; when grounded, will simulate corresponding keypress.
@@ -10,18 +10,18 @@
 
 # Here's a pin configuration for the Pocket PiGRRL project:
 
-LEFT       4  # Joypad left
-RIGHT     17  # Joypad right
-UP        18  # Joypad up
-DOWN      27  # Joypad down
-LEFTCTRL  22  # 'A' button
-LEFTALT   23  # 'B' button
-Z          5  # 'X' button
+LEFT      33  # Joypad left
+RIGHT     35  # Joypad right
+UP        22  # Joypad up
+DOWN      31  # Joypad down
+LEFTCTRL  38  # 'A' button
+LEFTALT   32  # 'B' button
+Z         36  # 'X' button
 ESC        6  # Exit ROM; PiTFT Button 1
-ENTER     12  # 'Start' button
-SPACE     13  # 'Select' button
-X         16  # 'Y' button
-
+ENTER     40  # 'Start' button
+SPACE     29  # 'Select' button
+X         37  # 'Y' button
+GND       39  # gnd
 # For configurations with few buttons (e.g. Cupcade), a key can be followed
 # by multiple pin numbers.  When those pins are all held for a few seconds,
 # this will generate the corresponding keypress (e.g. ESC to exit ROM).
